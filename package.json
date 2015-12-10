@@ -1,0 +1,38 @@
+{
+  "name": "github-latest-cli",
+  "description": "Get the latest tag for a repository on GitHub",
+  "author": "John Otander",
+  "version": "0.0.1",
+  "main": "cli.js",
+  "files": [
+    "cli.js"
+  ],
+  "bin": {
+    "github-latest": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "johnotander/github-latest-cli",
+  "keywords": [
+    "cli",
+    "cli-app",
+    "git",
+    "tag",
+    "latest",
+    "release"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "github-latest": "^0.1.2",
+    "is-blank": "^1.1.0",
+    "meow": "^3.5.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "pify": "^2.3.0"
+  }
+}
