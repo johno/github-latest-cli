@@ -24,7 +24,7 @@ $ github-latest
 
 ```
 $ github-latest johnotander immutable-css
-1.0.1
+v1.0.1
 ```
 
 ## Related
