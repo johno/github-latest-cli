@@ -27,6 +27,10 @@ $ github-latest johnotander immutable-css
 1.0.1
 ```
 
+## Related
+
+* <https://github.com/tmpvar/github-latest>
+
 ## License
 
 MIT
