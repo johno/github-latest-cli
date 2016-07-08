@@ -14,7 +14,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava -v"
   },
   "repository": "johnotander/github-latest-cli",
   "keywords": [
@@ -29,7 +29,8 @@
   "dependencies": {
     "github-latest": "^0.1.2",
     "is-blank": "^1.1.0",
-    "meow": "^3.5.0"
+    "meow": "^3.5.0",
+    "shtml": "^0.1.0"
   },
   "devDependencies": {
     "ava": "*",

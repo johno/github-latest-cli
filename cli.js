@@ -3,16 +3,24 @@
 'use strict'
 
 const meow = require('meow')
+const shtml = require('shtml')
 const isBlank = require('is-blank')
 const githubLatest = require('github-latest')
 
-const cli = meow(`
-  Usage
-    $ github-latest <user or org> <repo>
+const cli = meow(shtml`
+<div>
+  <underline>Usage</underline><br>
+    $ github-latest [user or org] [repo]<br><br>
 
-  Example
+  <underline>Example</underline><br>
     $ github-latest johnotander pixyll
-`)
+</div>
+`, {
+  alias: {
+    v: 'version',
+    h: 'help'
+  }
+})
 
 const userOrOrg = cli.input[0]
 const repoName = cli.input[1]

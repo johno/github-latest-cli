@@ -8,5 +8,5 @@ test('gets the latest version', async t => {
   t.plan(1)
 
   const stdout = await pify(childProcess.execFile)('./cli.js', ['johnotander', 'github-latest-cli'])
-  t.same(stdout.trim(), 'v' + pkg.version)
+  t.is(stdout.trim(), 'v' + pkg.version)
 })
